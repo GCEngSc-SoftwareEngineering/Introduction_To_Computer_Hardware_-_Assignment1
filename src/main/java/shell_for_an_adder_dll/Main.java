@@ -18,7 +18,7 @@ public class Main {
 	{
 		// TODO Auto-generated method stub
 		System.out.printf("entered first member function, main().%n");
-		Pointer pgmID_ConcurrentServer = IO.generate_Program();
+		Pointer pgmID_Adder = IO.generate_Program();
 		System.out.printf("==========%n");
 		System.out.printf("decliration.%n");
 		System.out.printf("definition.%n");
@@ -31,7 +31,11 @@ public class Main {
 		
 		//SIMULATION TestBench.
 		
+		IO.reg_set_Input_Subset_parise0_valueA(pgmID_Adder, (float)4.6);
+		IO.reg_set_Input_Subset_parise0_valueB(pgmID_Adder, (float)1.2);
 		
+		
+		System.out.printf("answer = " + IO.do_Add(pgmID_Adder, IO.reg_get_Input_Subset_parise0_valueA(pgmID_Adder), IO.reg_get_Input_Subset_parise0_valueB(pgmID_Adder)) + "%n");
 	}
 		// get.
 		// set.

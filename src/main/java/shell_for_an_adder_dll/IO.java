@@ -1,5 +1,6 @@
 package shell_for_an_adder_dll;
 
+import CLIBAdder.CLIBAdder;
 import src.engine.Framework;
 import src.engine.Framework_Ptr;
 import com.sun.jna.Pointer;
@@ -36,6 +37,26 @@ public class IO
 		}
 		System.out.printf("exiting dll.IO generate_Program().%n");
 		return stat_get_Framework_Ptr();
+	}
+	public static double do_Add(Pointer obj, float valueA, float valueB)
+	{
+		return CLIBAdder.INSTANCE.do_Add(obj, valueA, valueB);
+	}
+	public static float reg_get_Input_Subset_parise0_valueA(Pointer obj)
+	{
+		return CLIBAdder.INSTANCE.reg_get_Input_Subset_parise0_valueA(obj);
+	}
+	public static float reg_get_Input_Subset_parise0_valueB(Pointer obj)
+	{
+		return CLIBAdder.INSTANCE.reg_get_Input_Subset_parise0_valueB(obj);
+	}
+	public static void reg_set_Input_Subset_parise0_valueA(Pointer obj, float newValue)
+	{
+		CLIBAdder.INSTANCE.reg_set_Input_Subset_parise0_valueA(obj, newValue);
+	}
+	public static void reg_set_Input_Subset_parise0_valueB(Pointer obj, float newValue)
+	{
+		CLIBAdder.INSTANCE.reg_set_Input_Subset_parise0_valueB(obj, newValue);
 	}
 // private.
 	// dynamic.
