@@ -1,4 +1,8 @@
-# Concurrent_IO_Server.
+# Introduction To Computer Hardware.
+
+## ToDo:
+- JNI value mangling between java and c++.
+https://www.google.com/search?q=how+to+convert+c%2B%2B+float+to+java+float&rlz=1C1HKFL_enAU1205&oq=how+to+convert+c%2B%2B+float+to+java+float&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRhB0gEIMTAwOGowajmoAgCwAgA&sourceid=chrome&ie=UTF-8
 
 ## Using.
 ### Windows 11 Home.
@@ -23,5 +27,14 @@ Build id: 20251204-0850
 ### Apache Maven. 
  - https://maven.apache.org/install.html
  
-### Java Native Access Library
+### Java Native Access Library.
  - https://github.com/java-native-access/jna
+
+ #### edit pom.xml.
+````
+    <dependency>
+    	<groupId>net.java.dev.jna</groupId>
+    	<artifactId>jna</artifactId>
+    	<version>5.18.1</version> <!-- Check for newest 2026 version -->
+    </dependency>
+````
