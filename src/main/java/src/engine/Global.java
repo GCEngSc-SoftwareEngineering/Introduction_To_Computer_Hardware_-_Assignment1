@@ -31,6 +31,13 @@ public class Global
 	    buf.rewind();
 	    return buf.getFloat();
 	}
+    public static byte[] floatToBytes(float value, ByteOrder order) 
+    {
+        ByteBuffer buffer = ByteBuffer.allocate(4).order(order);
+        buffer.putFloat(value);
+        return buffer.array();
+    }
+
 		// get.
 	private static char dyn_REG_get_numberOfCores()
 	{

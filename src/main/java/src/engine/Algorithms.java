@@ -21,13 +21,13 @@ public class Algorithms
 // public.
 	// dynamic.
 		// get.
-	public static Object dyn_REG_get_Item_On_list_Of_Subset_For_Algorithm(char praiseID)
+	public Object dyn_REG_get_Item_On_list_Of_Subset_For_Algorithm(char praiseID)
 	{
 		return stat_REG_get_Item_On_list_Of_Subset_For_Algorithm(praiseID);
 		
 	}
 		// set.
-	public static Object dyn_REG_set_Item_On_list_Of_Subset_For_Algorithm(char praiseID, char newValue)
+	public Object dyn_REG_set_Item_On_list_Of_Subset_For_Algorithm(char praiseID, char newValue)
 	{
 		return stat_REG_get_Item_On_list_Of_Subset_For_Algorithm(praiseID);
 		

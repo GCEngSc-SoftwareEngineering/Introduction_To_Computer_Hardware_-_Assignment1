@@ -41,7 +41,20 @@ public class IO
 			System.out.printf("NullPointerException.%n");
 		}//high level software.
 		 */
-		System.out.printf("exiting dll.IO generate_Program().%n");
+		System.out.printf(".%n");
+		System.out.printf("        ,     \\      /      ,.%n");
+		System.out.printf("       / \\    )\\ __ /(     / \\ .%n");
+		System.out.printf("      /   \\   (_\\  /_)    /   \\ .%n");
+		System.out.printf("____ / ____\\__ \\@  @/ ___/_____\\_____.%n");
+		System.out.printf("|              |\\../|               |.%n");
+		System.out.printf("|               \\VV/                |.%n");
+		System.out.printf("|           CLIBAdder.dll           |.%n");
+		System.out.printf("|___________________________________|.%n");
+		System.out.printf("|    / \\ /        \\\\        \\ /\\    |.%n");
+		System.out.printf("|  /    V          ))        V   \\  |.%n");
+		System.out.printf("|/                //               \\| .%n");
+		System.out.printf("`                 V                 '.%n");
+		System.out.printf(".%n");
 		return stat_get_PGM_LibAdder_Ptr();
 	}
 		// get.
