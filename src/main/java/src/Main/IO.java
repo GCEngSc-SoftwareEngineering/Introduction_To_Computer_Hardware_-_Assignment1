@@ -3,6 +3,7 @@ package src.Main;
 import com.sun.jna.Pointer;
 
 import src.CLIBAdder.CLIBAdder;
+import src.CLIBAdder.LIBADDER_API;
 import src.CLIBAdder.PGM_LibAdder_Ptr;
 import src.engine.Global;
 
@@ -23,13 +24,7 @@ public class IO
 	public static PGM_LibAdder_Ptr generate_Program()
 	{
 		System.out.printf("entered dll.IO generate_Program().%n");
-		Pointer _framework = CLIBAdder.INSTANCE.generate_Program();
-		try {
-			stat_get_Framework();
-		} 
-		catch (NullPointerException e) {
-			System.out.printf("NullPointerException.%n");
-		}
+		Pointer _framework = LIBADDER_API.INSTANCE.generate_Program();
 		
 		PGM_LibAdder_Ptr _PGM_LibAdder_Ptr = new PGM_LibAdder_Ptr(_framework);
 		while(stat_get_PGM_LibAdder_Ptr() == null) { }//high level hardware.
@@ -41,20 +36,6 @@ public class IO
 			System.out.printf("NullPointerException.%n");
 		}//high level software.
 		 */
-		System.out.printf(".%n");
-		System.out.printf("        ,     \\      /      ,.%n");
-		System.out.printf("       / \\    )\\ __ /(     / \\ .%n");
-		System.out.printf("      /   \\   (_\\  /_)    /   \\ .%n");
-		System.out.printf("____ / ____\\__ \\@  @/ ___/_____\\_____.%n");
-		System.out.printf("|              |\\../|               |.%n");
-		System.out.printf("|               \\VV/                |.%n");
-		System.out.printf("|           CLIBAdder.dll           |.%n");
-		System.out.printf("|___________________________________|.%n");
-		System.out.printf("|    / \\ /        \\\\        \\ /\\    |.%n");
-		System.out.printf("|  /    V          ))        V   \\  |.%n");
-		System.out.printf("|/                //               \\| .%n");
-		System.out.printf("`                 V                 '.%n");
-		System.out.printf(".%n");
 		return stat_get_PGM_LibAdder_Ptr();
 	}
 		// get.

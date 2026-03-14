@@ -1,5 +1,6 @@
 package src.CLIBAdder;
 
+import src.CLIBAdder.PGM_LibAdder_Ptr;
 import src.Main.Framework_Ptr;
 import src.PraiseSets.Algorithim_praise0;
 import src.PraiseSets.Input_praise0;
@@ -17,12 +18,12 @@ public class CLIBAdder implements LIBADDER_API
 // registers.
 
 // pointers.
-	public static Framework_Ptr _framework_Ptr = null;
+	public static PGM_LibAdder_Ptr _PGM_LibAdder_Ptr = null;
 
 // dynamic.
 	// API member functions.
 	@Override
-	public double do_Add(Framework_Ptr obj) 
+	public double do_Add(PGM_LibAdder_Ptr obj) 
 	{
 		Algorithim_praise0 objAlg = (Algorithim_praise0)obj.get_App().get_Algorithms().dyn_REG_get_Item_On_list_Of_Subset_For_Algorithm((char) 0);
 		Input_praise0 objIn = (Input_praise0)obj.get_App().get_Data().dyn_REG_get_Item_On_list_Of_Subsets_For_Input((char) 0);
@@ -33,7 +34,28 @@ public class CLIBAdder implements LIBADDER_API
 	@Override
 	public Pointer generate_Program() 
 	{
-		stat_CLASS_create_Framework();
+		Framework _framework = new Framework();
+		try {
+			stat_CLASS_get_Framework();
+		} 
+		catch (NullPointerException e) {
+			System.out.printf("NullPointerException.%n");
+		}
+
+		System.out.printf(".%n");
+		System.out.printf("        ,     \\      /      ,.%n");
+		System.out.printf("       / \\    )\\ __ /(     / \\ .%n");
+		System.out.printf("      /   \\   (_\\  /_)    /   \\ .%n");
+		System.out.printf("____ / ____\\__ \\@  @/ ___/_____\\_____.%n");
+		System.out.printf("|              |\\../|               |.%n");
+		System.out.printf("|               \\VV/                |.%n");
+		System.out.printf("|           CLIBAdder.dll           |.%n");
+		System.out.printf("|___________________________________|.%n");
+		System.out.printf("|    / \\ /        \\\\        \\ /\\    |.%n");
+		System.out.printf("|  /    V          ))        V   \\  |.%n");
+		System.out.printf("|/                //               \\| .%n");
+		System.out.printf("`                 V                 '.%n");
+		System.out.printf(".%n");
 		return (Pointer)stat_CLASS_get_Framework();
 	}
 
@@ -75,26 +97,17 @@ public class CLIBAdder implements LIBADDER_API
 
 // static.
 	// classes.
-		// create.
-	private static void stat_CLASS_create_Framework()
-	{
-		Framework _framework = new Framework();
-		try {
-			stat_CLASS_get_Framework();
-		} 
-		catch (NullPointerException e) {
-			System.out.printf("NullPointerException.%n");
-		}
-	}
+		// create.
+
 		// get.
 	private static Pointer stat_CLASS_get_Framework()
 	{
 		return _framework;
 	}
 		// set.
-	public static Framework_Ptr stat_PTR_get_Framework_Ptr()
+	public static PGM_LibAdder_Ptr stat_PGM_get_LibAdder_Ptr()
 	{
-		return _framework_Ptr;
+		return _PGM_LibAdder_Ptr;
 	}
 	// registers.
 		// create.

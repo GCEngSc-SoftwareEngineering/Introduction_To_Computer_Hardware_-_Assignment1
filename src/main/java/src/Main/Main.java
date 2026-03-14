@@ -11,22 +11,22 @@ public class Main
 	
 	public static void main(String[] args) 
 	{
-		System.out.printf("exiting dll.IO generate_Program().%n");
+		System.out.printf("exiting dll.IO generate_Program()%n");
 		System.out.printf(".%n");
-		System.out.printf("        ,     \\      /      ,.%n");
-		System.out.printf("       / \\    )\\ __ /(     / \\ .%n");
-		System.out.printf("      /   \\   (_\\  /_)    /   \\ .%n");
-		System.out.printf("____ / ____\\__ \\@  @/ ___/_____\\_____.%n");
-		System.out.printf("|              |\\../|               |.%n");
-		System.out.printf("|               \\VV/                |.%n");
-		System.out.printf("| Introduction to Computer Systems  |.%n");
-		System.out.printf("|___________________________________|.%n");
-		System.out.printf("|    / \\ /        \\\\        \\ /\\    |.%n");
-		System.out.printf("|  /    V          ))        V   \\  |.%n");
-		System.out.printf("|/                //               \\| .%n");
-		System.out.printf("`                 V                 '.%n");
+		System.out.printf("        ,     \\      /      ,%n");
+		System.out.printf("       / \\    )\\ __ /(     / \\ %n");
+		System.out.printf("      /   \\   (_\\  /_)    /   \\ %n");
+		System.out.printf("____ / ____\\__ \\@  @/ ___/_____\\_____%n");
+		System.out.printf("|              |\\../|               |%n");
+		System.out.printf("|               \\VV/                |%n");
+		System.out.printf("| Introduction to Computer Systems  |%n");
+		System.out.printf("|___________________________________|%n");
+		System.out.printf("|    / \\ /        \\\\        \\ /\\    |%n");
+		System.out.printf("|  /    V          ))        V   \\  |%n");
+		System.out.printf("|/                //               \\|%n");
+		System.out.printf("`                 V                 '%n");
 		System.out.printf(".%n");
-		System.out.printf("entered first member function, main().%n");
+		System.out.printf("entered first member function, main()%n");
 		
 		PGM_LibAdder_Ptr objPGM = IO.generate_Program();
 		System.out.printf("==========%n");
