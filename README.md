@@ -30,9 +30,14 @@ Build id: 20251204-0850
 
  #### edit pom.xml.
 ````
-    <dependency>
-    	<groupId>net.java.dev.jna</groupId>
-    	<artifactId>jna</artifactId>
-    	<version>5.18.1</version> <!-- Check for newest 2026 version -->
-    </dependency>
+ <dependency>
+	    <groupId>net.java.dev.jna</groupId>
+	    <artifactId>jna</artifactId>
+	    <version>5.18.1</version> <!-- Use the latest version -->
+	</dependency>
+	<dependency>
+	    <groupId>net.java.dev.jna</groupId>
+	    <artifactId>jna-platform</artifactId>
+	    <version>5.18.1</version> <!-- Use the latest version -->
+	</dependency>
 ````
