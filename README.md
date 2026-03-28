@@ -39,3 +39,9 @@ Build id: 20251204-0850
 	    <version>5.18.1</version> <!-- Use the latest version -->
 	</dependency>
 ````
+
+### MSYS2.
+ - https://www.msys2.org/#installation
+
+ ### MinGW.
+  - https://sourceforge.net/projects/mingw-w64/
